@@ -1,0 +1,84 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles with Gradient */
+header {
+    background: linear-gradient(to right, #283593, #3f51b5); /* Gradient from deep blue to a lighter blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #ccccff; /* Lighter shade for hover */
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    margin: 8px 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light grey background */
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Project cards styling with hover effect */
+.project, #publications {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.project h3 {
+    color: #283593; /* Matching header color */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Adding shadow for depth */
+}
+
+/* Footer Styles with Gradient */
+footer {
+    background: linear-gradient(to right, #283593, #3f51b5); /* Consistent gradient with the header */
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+    }
+}
